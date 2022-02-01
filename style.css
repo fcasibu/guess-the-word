@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #333;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.wordle-grid {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0.5rem;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border: 2px solid #575757;
+    border-radius: 0.5rem;
+    width: 60px;
+    height: 60px;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.first-row,
+.second-row,
+.third-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.key {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #575757;
+    width: 50px;
+    height: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    color: #fff;
+}
+
+.del {
+    width: 70px;
+}
+
+.enter {
+    width: 70px;
+}
+
+.active {
+    animation: press 100ms;
+}
+
+.remove {
+    animation: remove 100ms;
+}
+
+@keyframes press {
+    from {
+        transform: scale(1.4);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes remove {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.4);
+    }
+}
