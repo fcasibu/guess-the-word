@@ -26,5 +26,5 @@ Both keyboard and mouse input works to operate
 
 This is a clone of a popular word guessing game called wordle. You get to guess a 5 letter word in 6 tries. Green indicates that you guessed the correct letter and position in the word, yellow indicates that you guessed the letter correctly but placed in the wrong position, while gray indicates that the letter is not in the word.
 
-This project is still in progress like about 85-90%, but I can't finish it right now. I will try to finish and refine it in the future after I get to know more about javascript.
+This project is still in progress like about 85-90%, but I can't finish it right now. I still need to add color to the keyboard and probably add the finished emojis. I will try to finish and refine it in the future after I get to know more about javascript.
 
