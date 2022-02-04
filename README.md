@@ -14,7 +14,7 @@ Both keyboard and mouse input works to operate
 
 - Live Demo: [https://nevz9.github.io/wordle-project/](https://nevz9.github.io/wordle-project/)
 
-- The words are taken from: [https://gist.github.com/cfreshman/cdcdf777450c5b5301e439061d29694c](https://gist.github.com/cfreshman/cdcdf777450c5b5301e439061d29694c)
+- The words are taken from: [https://gist.github.com/cfreshman/a03ef2cba789d8cf00c08f767e0fad7b](https://gist.github.com/cfreshman/a03ef2cba789d8cf00c08f767e0fad7b)
 
 - VS Code channel's lifesaver tip: [https://www.youtube.com/watch?v=QcXlyriZVa8](https://www.youtube.com/watch?v=QcXlyriZVa8)
 ### Built with
