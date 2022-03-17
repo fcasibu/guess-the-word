@@ -16,7 +16,7 @@ A wordle clone made with HTML, CSS, and Javascript.
 - Implemented eslint, editorconfig, and prettier, for finding errors and consistent code style
 - Integrated webpack
 - Changed the UI
-- Made it easier to read (hopefully, need to work on my naming)
+- Made variables, functions, etc easier to read (hopefully, need to work on my naming)
 
 ## Lessons Learned
 
