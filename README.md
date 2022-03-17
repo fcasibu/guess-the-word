@@ -4,7 +4,7 @@ A wordle clone made with HTML, CSS, and Javascript.
 
 ## Demo
 
-[Live Preview](https://nevz9.github.io/wordle-project/)
+[Live Preview](https://nevz9.github.io/guess-the-word/)
 
 ## Screenshots
 
