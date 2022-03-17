@@ -1,30 +1,27 @@
-# Wordle Project
+# guess-the-word
 
-A Wordle Project made with Basic HTML, CSS, and Javscript
+A wordle clone made with HTML, CSS, and Javascript.
 
-Both keyboard and mouse input works to operate
+## Demo
 
-### Preview
+[Live Preview](https://nevz9.github.io/wordle-project/)
 
-![](preview.png)
+## Screenshots
 
-### Links
+![App Screenshot](preview.png)
 
-- Official Wordle Website: [https://www.powerlanguage.co.uk/wordle/](https://www.powerlanguage.co.uk/wordle/)
+## Optimizations
 
-- Live Demo: [https://nevz9.github.io/wordle-project/](https://nevz9.github.io/wordle-project/)
+- Completely new code from the old one
+- Integrated webpack
+- Changed the UI
+- Made it easier to read (hopefully, need to work on my naming)
 
-- The words are taken from: [https://gist.github.com/cfreshman/cdcdf777450c5b5301e439061d29694c](https://gist.github.com/cfreshman/cdcdf777450c5b5301e439061d29694c)
+## Lessons Learned
 
-- VS Code channel's lifesaver tip: [https://www.youtube.com/watch?v=QcXlyriZVa8](https://www.youtube.com/watch?v=QcXlyriZVa8)
-### Built with
+Making use of the single responsibility principle. I learned how to spot code duplications, which was what I struggled the most with all the projects I've done so far. I'm still not fully confident but I will keep learning more about this.
 
-- Basic HTML5 and CSS3
-- Javscript Fetch API
+## Acknowledgements
 
-##
-
-This is a clone of a popular word guessing game called wordle. You get to guess a 5 letter word in 6 tries. Green indicates that you guessed the correct letter and position in the word, yellow indicates that you guessed the letter correctly but placed in the wrong position, while gray indicates that the letter is not in the word.
-
-This project is still in progress like about 85-90%, but I can't finish it right now. I will try to finish and refine it in the future after I get to know more about javascript.
-
+- [Official Wordle Website](https://www.nytimes.com/games/wordle/index.html)
+- [Word list that I took from](https://gist.github.com/cfreshman/a03ef2cba789d8cf00c08f767e0fad7b)

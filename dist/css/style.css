@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "JetBrains Mono", monospace;
+}
+
+body {
+  background: #111;
+  color: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.wordle-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 85px);
+  grid-auto-rows: 85px;
+  gap: 0.25rem;
+  width: max-content;
+  margin: 0.5rem;
+  font-size: 0;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  border: 1px solid rgba(179, 179, 179, 0.2);
+  transition: all 75ms ease-in-out;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.first-row,
+.second-row,
+.third-row {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.1rem;
+}
+
+@media (max-width: 700px) {
+  .first-row,
+  .second-row,
+  .third-row {
+    gap: 0.7rem;
+  }
+
+  .key {
+    max-width: 50px;
+  }
+}
+
+.key {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #444444;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.end-screen {
+  position: absolute;
+  top: 25%;
+  background: #202020;
+  padding: 2rem;
+  width: 500px;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+  box-shadow: 0 0 9999px 9999px rgba(0, 0, 0, 0.5);
+  border-radius: 0.3rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+}
+
+.show-end-screen {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 720px) {
+  .end-screen {
+    width: 90%;
+  }
+}
+
+.play-again {
+  background: #444444;
+  padding: 1rem 2rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.play-again:hover {
+  opacity: 0.8;
+}
+
+.error-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50px;
+}
+
+.error-message {
+  background: #575757;
+  border-radius: 0.2rem;
+  text-align: center;
+  width: max-content;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+
+.show-error {
+  opacity: 0;
+}
+
+.del {
+  width: 70px;
+}
+
+.enter {
+  width: 70px;
+}
+
+.add {
+  transform: scale(1.4);
+}
+
+.remove {
+  animation: remove 75ms;
+}
+
+.red-border {
+  border: 1px solid red;
+}
+
+@keyframes remove {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.4);
+  }
+}
+
+.shake-boxes {
+  animation: shake 100ms;
+}
+
+@keyframes shake {
+  from {
+    transform: translate(10px);
+  }
+  50% {
+    transform: translate(-10px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+.wrong,
+.wrong-location,
+.correct {
+  box-shadow: inset 0 0 1rem #000000;
+  transition: all 200ms ease-in-out;
+}
+
+.wrong {
+  background: #292929;
+}
+
+.wrong-location {
+  background: #bebb12;
+}
+
+.correct {
+  background: #04df04;
+}
